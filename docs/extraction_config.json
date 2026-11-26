@@ -1,0 +1,16 @@
+{
+    "original_extractor": "PyMuPDF get_text(sort=True)",
+    "candidate_extractor": "PyMuPDF4LLM",
+    "candidate_version": "2.2",
+    "identified_issue": "Two-column text interleaving",
+    "status": "Rebuilt; sampled extraction inspected",
+    "test_documents": [
+        "bert",
+        "sentence_bert"
+    ],
+    "active_extractor": "PyMuPDF4LLM",
+    "corpus_version": 2,
+    "total_pages": 74,
+    "total_chunks": 433,
+    "embedding_dimensions": 384
+}

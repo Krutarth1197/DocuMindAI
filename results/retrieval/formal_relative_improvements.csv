@@ -1,0 +1,13 @@
+proposed_method,baseline,metric,baseline_score,proposed_score,absolute_difference,relative_improvement_percent
+Hybrid + Cross-Encoder,BM25,hit_at_1,32.0,48.0,16.0,50.0
+Hybrid + Cross-Encoder,BM25,hit_at_5,76.0,80.0,4.0,5.263157894736842
+Hybrid + Cross-Encoder,BM25,recall_at_5,56.8,60.73333333333334,3.9333333333333442,6.924882629108001
+Hybrid + Cross-Encoder,BM25,mrr_at_5,0.4746666666666667,0.5893333333333333,0.11466666666666658,24.157303370786497
+Hybrid + Cross-Encoder,Dense Semantic,hit_at_1,20.0,48.0,28.0,140.0
+Hybrid + Cross-Encoder,Dense Semantic,hit_at_5,40.0,80.0,40.0,100.0
+Hybrid + Cross-Encoder,Dense Semantic,recall_at_5,35.2,60.73333333333334,25.53333333333334,72.5378787878788
+Hybrid + Cross-Encoder,Dense Semantic,mrr_at_5,0.2766666666666666,0.5893333333333333,0.31266666666666665,113.0120481927711
+Hybrid + Cross-Encoder,Hybrid RRF,hit_at_1,20.0,48.0,28.0,140.0
+Hybrid + Cross-Encoder,Hybrid RRF,hit_at_5,72.0,80.0,8.0,11.11111111111111
+Hybrid + Cross-Encoder,Hybrid RRF,recall_at_5,58.599999999999994,60.73333333333334,2.133333333333347,3.640500568828238
+Hybrid + Cross-Encoder,Hybrid RRF,mrr_at_5,0.37266666666666665,0.5893333333333333,0.21666666666666662,58.13953488372092

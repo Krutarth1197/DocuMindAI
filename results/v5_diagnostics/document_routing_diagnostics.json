@@ -1,0 +1,50 @@
+[
+  {
+    "query":"How is BERT fine-tuned for extractive question answering?",
+    "detected_documents":[
+      "bert"
+    ],
+    "original_chunks":[
+      "dense_passage_retrieval_p11_c7",
+      "bert_p3_c3",
+      "bert_p1_c2"
+    ],
+    "document_aware_chunks":[
+      "bert_p1_c5",
+      "bert_p5_c4",
+      "bert_p3_c3"
+    ]
+  },
+  {
+    "query":"How does Sentence-BERT use natural language inference data during training?",
+    "detected_documents":[
+      "sentence_bert"
+    ],
+    "original_chunks":[
+      "bert_p1_c2",
+      "bert_p5_c2",
+      "sentence_bert_p9_c6"
+    ],
+    "document_aware_chunks":[
+      "sentence_bert_p2_c5",
+      "bert_p1_c2",
+      "bert_p5_c2"
+    ]
+  },
+  {
+    "query":"What is the difference between RAG-Sequence and RAG-Token?",
+    "detected_documents":[
+      "rag"
+    ],
+    "original_chunks":[
+      "rag_p6_c5",
+      "rag_p8_c5",
+      "rag_p6_c4"
+    ],
+    "document_aware_chunks":[
+      "rag_p6_c5",
+      "rag_p7_c5",
+      "rag_p3_c1"
+    ]
+  }
+]

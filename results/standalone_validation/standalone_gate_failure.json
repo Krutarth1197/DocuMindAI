@@ -1,0 +1,17 @@
+{
+    "pipeline_version": 5,
+    "test_type": "standalone_end_to_end",
+    "query": "How many parameters does GPT-4 have?",
+    "expected_answerable": false,
+    "relevance_threshold": 0.0,
+    "observed_relevance_score": 2.783240795135498,
+    "relevance_gate_correct": false,
+    "final_abstention_correct": true,
+    "final_status": "model_abstained",
+    "retrieval_time_seconds": 9.276456277999387,
+    "generation_time_seconds": 127.80507921999924,
+    "total_time_seconds": 137.18321753099917,
+    "failure_type": "relevance_gate_false_acceptance",
+    "limitation": "The relevance gate can accept unanswerable questions even when the final language model correctly abstains.",
+    "threshold_modified": false
+}

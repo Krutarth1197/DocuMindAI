@@ -1,0 +1,387 @@
+[
+  {
+    "question_id":"Q001",
+    "expected_document":"attention_is_all_you_need",
+    "query":"Why does scaled dot-product attention divide the dot products by the square root of the key dimension?",
+    "expected_answerable":true,
+    "reference_answer":"For large key dimensions, dot products can grow large in magnitude and push the softmax function into regions with extremely small gradients. Scaling by the inverse square root of the key dimension counteracts this effect.",
+    "relevant_pages":[
+      4
+    ],
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p4_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q002",
+    "expected_document":"attention_is_all_you_need",
+    "query":"How are sinusoidal positional encodings constructed?",
+    "expected_answerable":true,
+    "reference_answer":"The Transformer uses fixed sinusoidal positional encodings with different frequencies. Even dimensions use sine functions and odd dimensions use cosine functions, with frequencies determined by 10000 raised to the power 2i\/d_model. These encodings have the same dimensionality as the token embeddings and are added to them.",
+    "relevant_pages":[
+      6
+    ],
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p6_c2",
+      "attention_is_all_you_need_p6_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q003",
+    "expected_document":"attention_is_all_you_need",
+    "query":"What prevents the Transformer decoder from attending to subsequent positions?",
+    "expected_answerable":true,
+    "reference_answer":"The Transformer decoder uses causal masking in scaled dot-product attention. Connections to subsequent positions are masked by setting their pre-softmax scores to negative infinity, preserving the autoregressive property.",
+    "relevant_pages":[
+      5
+    ],
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p5_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q004",
+    "expected_document":"attention_is_all_you_need",
+    "query":"What is the structure of the position-wise feed-forward network?",
+    "expected_answerable":true,
+    "reference_answer":"The position-wise feed-forward network consists of two linear transformations with a ReLU activation between them. It is applied separately and identically to each position. The input and output dimensions are 512, and the inner-layer dimension is 2048.",
+    "relevant_pages":[
+      5
+    ],
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p5_c4"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q005",
+    "expected_document":"attention_is_all_you_need",
+    "query":"What optimizer and learning rate schedule were used to train the Transformer?",
+    "expected_answerable":true,
+    "reference_answer":"The Transformer uses the Adam optimizer with beta1 = 0.9, beta2 = 0.98 and epsilon = 1e-9. The learning rate increases linearly during the first 4000 warmup steps and subsequently decreases proportionally to the inverse square root of the training step number.",
+    "relevant_pages":[
+      7
+    ],
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p7_c4",
+      "attention_is_all_you_need_p7_c5"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q006",
+    "expected_document":"bert",
+    "query":"How does BERT construct its input token representations?",
+    "expected_answerable":true,
+    "reference_answer":"BERT constructs each input token representation by summing its token embedding, segment embedding and position embedding.",
+    "relevant_pages":[
+      4,
+      5
+    ],
+    "relevant_chunk_ids":[
+      "bert_p4_c2",
+      "bert_p5_c1"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q007",
+    "expected_document":"bert",
+    "query":"What is the purpose of next sentence prediction during BERT pre-training?",
+    "expected_answerable":true,
+    "reference_answer":"Next sentence prediction trains BERT to understand relationships between sentences. In 50% of training examples, sentence B is the actual next sentence following sentence A, and in the other 50%, it is a random sentence from the corpus.",
+    "relevant_pages":[
+      2,
+      4,
+      13
+    ],
+    "relevant_chunk_ids":[
+      "bert_p2_c1",
+      "bert_p4_c6",
+      "bert_p13_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q008",
+    "expected_document":"bert",
+    "query":"How does BERT select and replace tokens during masked language model training?",
+    "expected_answerable":true,
+    "reference_answer":"BERT randomly selects 15% of token positions for prediction. Of the selected tokens, 80% are replaced with the MASK token, 10% with a random token, and 10% remain unchanged. The model predicts the original tokens.",
+    "relevant_pages":[
+      4,
+      12,
+      13,
+      16
+    ],
+    "relevant_chunk_ids":[
+      "bert_p4_c4",
+      "bert_p12_c4",
+      "bert_p12_c5",
+      "bert_p13_c3",
+      "bert_p16_c4"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q009",
+    "expected_document":"bert",
+    "query":"How many layers and attention heads are used in BERT Base and BERT Large?",
+    "expected_answerable":true,
+    "reference_answer":"BERT Base contains 12 Transformer layers and 12 self-attention heads. BERT Large contains 24 Transformer layers and 16 self-attention heads.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "bert_p3_c5"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q010",
+    "expected_document":"bert",
+    "query":"How is BERT fine-tuned for extractive question answering?",
+    "expected_answerable":true,
+    "reference_answer":"BERT represents the question and passage as a single packed sequence. During fine-tuning, trainable start and end vectors are introduced. Dot products between these vectors and token representations, followed by softmax, determine the probabilities of answer-span boundaries.",
+    "relevant_pages":[
+      6
+    ],
+    "relevant_chunk_ids":[
+      "bert_p6_c6"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q011",
+    "expected_document":"sentence_bert",
+    "query":"Which pooling strategies are evaluated in Sentence-BERT?",
+    "expected_answerable":true,
+    "reference_answer":"Sentence-BERT evaluates three pooling strategies: using the output of the CLS token, mean pooling over all output vectors, and max-over-time pooling over the output vectors.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c2"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q012",
+    "expected_document":"sentence_bert",
+    "query":"How is the triplet objective defined in Sentence-BERT?",
+    "expected_answerable":true,
+    "reference_answer":"The triplet objective uses an anchor, a positive sentence and a negative sentence. It minimizes max(d(a,p) - d(a,n) + margin, 0), encouraging the positive embedding to be closer to the anchor than the negative embedding. SBERT uses Euclidean distance and a margin of 1.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c4",
+      "sentence_bert_p3_c5"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q013",
+    "expected_document":"sentence_bert",
+    "query":"How does Sentence-BERT use natural language inference data during training?",
+    "expected_answerable":true,
+    "reference_answer":"Sentence-BERT is trained using the combined SNLI and MultiNLI datasets, containing 570000 and 430000 sentence pairs respectively. It is fine-tuned for one epoch using a three-way softmax classification objective, batch size 16, Adam with learning rate 2e-5 and linear warmup over 10% of the training data.",
+    "relevant_pages":[
+      3,
+      4
+    ],
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c5",
+      "sentence_bert_p4_c3",
+      "sentence_bert_p4_c4"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q014",
+    "expected_document":"sentence_bert",
+    "query":"Which pooling strategy is used as the default configuration in Sentence-BERT?",
+    "expected_answerable":true,
+    "reference_answer":"Mean pooling is the default pooling strategy used in Sentence-BERT.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c2"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q015",
+    "expected_document":"sentence_bert",
+    "query":"What features are concatenated for the Sentence-BERT classification objective?",
+    "expected_answerable":true,
+    "reference_answer":"For its classification objective, Sentence-BERT concatenates the sentence embeddings u and v with their element-wise absolute difference |u-v|. The concatenated representation is passed through a trainable weight matrix and softmax classifier.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c1",
+      "sentence_bert_p3_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q016",
+    "expected_document":"rag",
+    "query":"What is the difference between RAG-Sequence and RAG-Token?",
+    "expected_answerable":true,
+    "reference_answer":"RAG-Sequence uses the same latent retrieved document for the entire generated sequence, whereas RAG-Token allows different latent documents to contribute to individual output tokens.",
+    "relevant_pages":[
+      2,
+      3
+    ],
+    "relevant_chunk_ids":[
+      "rag_p2_c4",
+      "rag_p3_c1",
+      "rag_p3_c2",
+      "rag_p3_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q017",
+    "expected_document":"rag",
+    "query":"Which pre-trained model is used as the parametric generator in RAG?",
+    "expected_answerable":true,
+    "reference_answer":"RAG uses the pre-trained BART-large sequence-to-sequence Transformer as its parametric generator.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "rag_p3_c5",
+      "rag_p3_c6"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q018",
+    "expected_document":"rag",
+    "query":"How is the non-parametric memory constructed in the RAG framework?",
+    "expected_answerable":true,
+    "reference_answer":"RAG constructs its non-parametric memory using the December 2018 Wikipedia dump. Articles are divided into disjoint 100-word chunks, producing approximately 21 million passages. A DPR document encoder generates dense embeddings, which are indexed using FAISS with an HNSW approximation for maximum inner product search.",
+    "relevant_pages":[
+      4
+    ],
+    "relevant_chunk_ids":[
+      "rag_p4_c4"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q019",
+    "expected_document":"rag",
+    "query":"Why is the document encoder kept fixed during RAG fine-tuning?",
+    "expected_answerable":true,
+    "reference_answer":"Updating the document encoder during training would require periodically rebuilding the document index, which is computationally costly. The authors found this unnecessary for strong performance and therefore kept the document encoder and index fixed while fine-tuning the query encoder and BART generator.",
+    "relevant_pages":[
+      4
+    ],
+    "relevant_chunk_ids":[
+      "rag_p4_c1"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q020",
+    "expected_document":"rag",
+    "query":"How does RAG marginalize over retrieved documents during generation?",
+    "expected_answerable":true,
+    "reference_answer":"RAG treats retrieved documents as latent variables and approximates marginalization over the top-K retrieved documents. RAG-Sequence marginalizes document-conditioned sequence probabilities, while RAG-Token marginalizes document-conditioned token probabilities at each generation step.",
+    "relevant_pages":[
+      2,
+      3
+    ],
+    "relevant_chunk_ids":[
+      "rag_p2_c4",
+      "rag_p3_c1",
+      "rag_p3_c2",
+      "rag_p3_c3"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q021",
+    "expected_document":"dense_passage_retrieval",
+    "query":"How is similarity calculated between question and passage embeddings in DPR?",
+    "expected_answerable":true,
+    "reference_answer":"DPR calculates similarity using the dot product between the question embedding produced by the question encoder and the passage embedding produced by the passage encoder.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p3_c1"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q022",
+    "expected_document":"dense_passage_retrieval",
+    "query":"What types of negative passages are considered during DPR training?",
+    "expected_answerable":true,
+    "reference_answer":"DPR considers three types of negative passages: random passages from the corpus, BM25 passages that match the question but do not contain the answer, and gold passages associated with other training questions.",
+    "relevant_pages":[
+      3
+    ],
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p3_c6"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q023",
+    "expected_document":"dense_passage_retrieval",
+    "query":"How are in-batch negatives used to train the dense retriever?",
+    "expected_answerable":true,
+    "reference_answer":"In-batch negative training reuses positive passages associated with other questions in the same mini-batch as negative examples. This increases the number of training pairs while improving computational and memory efficiency.",
+    "relevant_pages":[
+      3,
+      6
+    ],
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p3_c6",
+      "dense_passage_retrieval_p6_c2"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q024",
+    "expected_document":"dense_passage_retrieval",
+    "query":"How is Wikipedia divided into passages for dense passage retrieval?",
+    "expected_answerable":true,
+    "reference_answer":"DPR preprocesses English Wikipedia articles to remove semi-structured content and splits the articles into disjoint 100-word passages. This produces 21015324 passages. Each passage is prepended with its article title and a SEP token.",
+    "relevant_pages":[
+      4
+    ],
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p4_c1",
+      "dense_passage_retrieval_p4_c2"
+    ],
+    "annotation_verified":true
+  },
+  {
+    "question_id":"Q025",
+    "expected_document":"dense_passage_retrieval",
+    "query":"What objective function is used to train the DPR dual encoder?",
+    "expected_answerable":true,
+    "reference_answer":"DPR trains the dual encoder by minimizing the negative log-likelihood of the positive passage. The probability is computed using a softmax over the similarity scores of the positive and negative passages.",
+    "relevant_pages":[
+      3,
+      12
+    ],
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p3_c4",
+      "dense_passage_retrieval_p3_c5",
+      "dense_passage_retrieval_p12_c1"
+    ],
+    "annotation_verified":true
+  }
+]

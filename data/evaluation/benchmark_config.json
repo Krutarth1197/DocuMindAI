@@ -1,0 +1,16 @@
+{
+    "benchmark_name": "DocuMind AI Retrieval Benchmark",
+    "benchmark_version": 1,
+    "corpus_version": 2,
+    "total_documents": 5,
+    "total_corpus_chunks": 433,
+    "answerable_questions": 25,
+    "annotation_method": "Manual evidence annotation with keyword-assisted inspection",
+    "annotation_scope": "Known relevant chunks; not exhaustive",
+    "independently_reviewed": false,
+    "relevance_threshold": 0.0,
+    "benchmark_sha256": "1acbb544607e7fe27fefcab486c6f92683c4db0c754867bb22a47ebf68fed834",
+    "corpus_sha256": "0d11169d9aa5943cc11bf8351aed6516bbd9d7f27a40e13e9bccab23949cba7f",
+    "created_at": "2026-11-26T07:18:40.419909+00:00",
+    "status": "frozen"
+}

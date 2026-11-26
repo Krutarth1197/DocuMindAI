@@ -1,0 +1,4 @@
+baseline,proposed_wins,proposed_losses,ties,p_value,holm_adjusted_p,significant_at_0.05
+BM25,2,1,22,1.0,1.0,False
+Dense Semantic,10,0,15,0.001953125,0.005859375,True
+Hybrid RRF,2,0,23,0.5,1.0,False

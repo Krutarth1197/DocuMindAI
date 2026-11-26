@@ -1,0 +1,36 @@
+{
+    "project_name": "DocuMind AI",
+    "pipeline_version": 5,
+    "corpus_version": 2,
+    "total_documents": 5,
+    "total_chunks": 433,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "language_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "retrieval": {
+        "global_method": "Hybrid RRF + Cross-Encoder",
+        "candidate_pool": 15,
+        "document_aware_retrieval": true,
+        "document_candidate_pool": 20,
+        "document_match_bonus": 1.5,
+        "bibliography_penalty": 2.0,
+        "bibliography_score_threshold": 8,
+        "context_overlap_threshold": 0.65,
+        "context_top_k": 3
+    },
+    "generation": {
+        "prompt_version": 3,
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "requested_answer_word_limit": 40
+    },
+    "safeguards": {
+        "relevance_threshold": 0.0,
+        "structural_validation": true,
+        "citation_id_validation": true,
+        "semantic_citation_verification": false,
+        "evidence_fallback": true,
+        "evidence_only_mode": true
+    },
+    "evaluation_status": "Prototype with diagnostic testing; independent V5 evaluation pending"
+}

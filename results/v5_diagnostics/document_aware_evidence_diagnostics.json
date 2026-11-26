@@ -1,0 +1,128 @@
+[
+  {
+    "question_id":"Q010",
+    "method":"Original",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "dense_passage_retrieval_p11_c7",
+      "bert_p3_c3",
+      "bert_p1_c2"
+    ]
+  },
+  {
+    "question_id":"Q010",
+    "method":"Bibliography + Diversity",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "bert_p3_c3",
+      "dense_passage_retrieval_p11_c7",
+      "bert_p1_c2"
+    ]
+  },
+  {
+    "question_id":"Q010",
+    "method":"Document-Aware",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "bert_p1_c5",
+      "bert_p5_c4",
+      "bert_p3_c3"
+    ]
+  },
+  {
+    "question_id":"Q013",
+    "method":"Original",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "bert_p1_c2",
+      "bert_p5_c2",
+      "sentence_bert_p9_c6"
+    ]
+  },
+  {
+    "question_id":"Q013",
+    "method":"Bibliography + Diversity",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "bert_p1_c2",
+      "bert_p5_c2",
+      "bert_p3_c2"
+    ]
+  },
+  {
+    "question_id":"Q013",
+    "method":"Document-Aware",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "sentence_bert_p2_c5",
+      "bert_p1_c2",
+      "bert_p5_c2"
+    ]
+  },
+  {
+    "question_id":"Q016",
+    "method":"Original",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "rag_p6_c5",
+      "rag_p8_c5",
+      "rag_p6_c4"
+    ]
+  },
+  {
+    "question_id":"Q016",
+    "method":"Bibliography + Diversity",
+    "hit_at_3":0,
+    "recall_at_3":0.0,
+    "matched_chunks":[
+
+    ],
+    "retrieved_chunks":[
+      "rag_p6_c5",
+      "rag_p8_c5",
+      "rag_p6_c4"
+    ]
+  },
+  {
+    "question_id":"Q016",
+    "method":"Document-Aware",
+    "hit_at_3":1,
+    "recall_at_3":0.25,
+    "matched_chunks":[
+      "rag_p3_c1"
+    ],
+    "retrieved_chunks":[
+      "rag_p6_c5",
+      "rag_p7_c5",
+      "rag_p3_c1"
+    ]
+  }
+]

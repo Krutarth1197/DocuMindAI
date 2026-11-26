@@ -1,0 +1,11 @@
+{
+    "evaluated_answerable_questions": 10,
+    "factual_correctness_percent": 75.0,
+    "completeness_percent": 50.0,
+    "citation_support_percent": 25.0,
+    "overall_rubric_score_percent": 50.0,
+    "fully_factually_correct_answers": 5,
+    "fully_complete_answers": 2,
+    "fully_supported_answers": 1,
+    "perfect_answers": 0
+}

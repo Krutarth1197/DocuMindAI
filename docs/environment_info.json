@@ -1,0 +1,22 @@
+{
+  "python_version": "3.13.18",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "dependencies": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.22.1",
+    "accelerate": "1.15.0",
+    "sentence-transformers": "5.7.0",
+    "faiss-cpu": "1.16.0",
+    "rank-bm25": "0.2.2",
+    "pymupdf": "2.2",
+    "pymupdf4llm": "2.2",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "gradio": "6.31.0",
+    "requests": "2.32.4",
+    "psutil": "5.9.5"
+  }
+}

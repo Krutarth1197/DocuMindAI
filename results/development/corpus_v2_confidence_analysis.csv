@@ -1,0 +1,16 @@
+query,expected_answerable,top_relevance_score,predicted_answerable,correct_prediction,top_document
+How does multi-head attention work?,True,6.757203578948975,True,True,attention_is_all_you_need
+What is masked language modeling?,True,4.60866641998291,True,True,bert
+How does retrieval augmented generation work?,True,4.728022575378418,True,True,rag
+Why is Sentence-BERT computationally efficient?,True,6.7594099044799805,True,True,sentence_bert
+How are dense passage representations learned?,True,5.646671295166016,True,True,dense_passage_retrieval
+What is the population of Mars?,False,-10.736473083496094,False,True,attention_is_all_you_need
+Who won the 2022 FIFA World Cup?,False,-6.242100238800049,False,True,rag
+What is the recipe for chocolate cake?,False,-11.037026405334473,False,True,attention_is_all_you_need
+How does the human digestive system work?,False,-10.220377922058105,False,True,rag
+What is the current price of Bitcoin?,False,-11.083995819091797,False,True,bert
+What is the exact parameter count of GPT-4?,False,-0.3635573387145996,False,True,bert
+What benchmark accuracy did GPT-4o achieve on MMLU?,False,-0.8643307089805603,False,True,bert
+What is the training dataset size of Llama 3?,False,-2.0876424312591553,False,True,dense_passage_retrieval
+What is the exact architecture of DeepSeek-R1?,False,-9.998052597045898,False,True,bert
+What GPU configuration was used to train Gemini 1.5?,False,-2.9591145515441895,False,True,attention_is_all_you_need

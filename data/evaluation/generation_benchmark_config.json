@@ -1,0 +1,20 @@
+{
+    "benchmark_version": 1,
+    "corpus_version": 2,
+    "total_questions": 15,
+    "answerable_questions": 10,
+    "unanswerable_questions": 5,
+    "language_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "retrieval_method": "Hybrid RRF + Cross-Encoder",
+    "relevance_threshold": 0.0,
+    "context_top_k": 3,
+    "max_new_tokens": 96,
+    "do_sample": false,
+    "prompt_version": 2,
+    "benchmark_sha256": "54686566242ed2a0e2d305e9c753dc4c017fc7f7e0f7d3aa230b3ce8ff8bb1f0",
+    "corpus_sha256": "0d11169d9aa5943cc11bf8351aed6516bbd9d7f27a40e13e9bccab23949cba7f",
+    "selection_method": "Fixed purposive subset selected before generation evaluation, including known retrieval failures",
+    "status": "frozen"
+}

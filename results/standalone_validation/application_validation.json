@@ -1,0 +1,30 @@
+{
+    "project": "DocuMind AI",
+    "pipeline_version": 5,
+    "corpus_version": 2,
+    "verified_at": "2026-11-26T09:19:44.789698+00:00",
+    "standalone_application_launch": true,
+    "evidence_search_verified": true,
+    "ai_generation_execution_verified": true,
+    "document_routing_verified": true,
+    "source_page_display_verified": true,
+    "structural_validation_verified": true,
+    "evidence_fallback_verified": true,
+    "generation_test": {
+        "query": "What is the purpose of masked language modeling in BERT?",
+        "status": "evidence_fallback",
+        "validation_issues": [
+            "missing_valid_citations",
+            "missing_initial_source_citation"
+        ]
+    },
+    "limitations": [
+        "Inconsistent generated citation formatting",
+        "Relevance gate false acceptance",
+        "CPU generation latency",
+        "Residual PDF extraction artifacts",
+        "Semantic citation support not automatically verified",
+        "Independent V5 answer quality evaluation pending",
+        "Fresh installation reproducibility not verified"
+    ]
+}

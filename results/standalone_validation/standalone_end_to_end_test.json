@@ -1,0 +1,38 @@
+[
+    {
+        "test": "Evidence Search",
+        "query": "How does DPR calculate similarity?",
+        "status": "evidence_only",
+        "retrieval_time": 11.100625193999804,
+        "generation_time": 0.0,
+        "total_time": 11.1026086210004,
+        "generated_tokens": 0,
+        "validation_issues": [],
+        "source_count": 3
+    },
+    {
+        "test": "Unanswerable Question",
+        "query": "How many parameters does GPT-4 have?",
+        "status": "model_abstained",
+        "retrieval_time": 7.6182042400014325,
+        "generation_time": 57.55491792999965,
+        "total_time": 65.20588798499921,
+        "generated_tokens": 9,
+        "validation_issues": [],
+        "source_count": 3
+    },
+    {
+        "test": "AI Question Answering",
+        "query": "What is the purpose of masked language modeling in BERT?",
+        "status": "evidence_fallback",
+        "retrieval_time": 7.808926319999955,
+        "generation_time": 80.71097418699901,
+        "total_time": 88.5255753450001,
+        "generated_tokens": 40,
+        "validation_issues": [
+            "missing_valid_citations",
+            "missing_initial_source_citation"
+        ],
+        "source_count": 3
+    }
+]

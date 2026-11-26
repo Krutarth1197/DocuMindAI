@@ -1,0 +1,27 @@
+[
+    {
+        "filename": "attention_is_all_you_need.pdf",
+        "size_bytes": 2215244,
+        "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697"
+    },
+    {
+        "filename": "bert.pdf",
+        "size_bytes": 775166,
+        "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+    },
+    {
+        "filename": "dense_passage_retrieval.pdf",
+        "size_bytes": 383508,
+        "sha256": "3e67fc1a9977715acf722d85f0b7d124b03715e975f6310a4d6c12094190912f"
+    },
+    {
+        "filename": "rag.pdf",
+        "size_bytes": 885323,
+        "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233"
+    },
+    {
+        "filename": "sentence_bert.pdf",
+        "size_bytes": 548961,
+        "sha256": "92366d22fc0521350d6cbe0ad72bcee754f90e88181d7b4a8e2adb1e7e594fec"
+    }
+]

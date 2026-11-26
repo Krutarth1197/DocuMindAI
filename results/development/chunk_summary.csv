@@ -1,0 +1,6 @@
+document,total_chunks,average_tokens,total_words
+attention_is_all_you_need,65,207.86153846153846,7600
+bert,101,205.3861386138614,12107
+dense_passage_retrieval,85,210.96470588235294,10753
+rag,111,210.4954954954955,12457
+sentence_bert,71,205.92957746478874,7845

@@ -1,0 +1,155 @@
+[
+  {
+    "question_id":"Q001",
+    "query":"Why does scaled dot-product attention divide the dot products by the square root of the key dimension?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"For large key dimensions, dot products can grow large in magnitude and push the softmax function into regions with extremely small gradients. Scaling by the inverse square root of the key dimension counteracts this effect.",
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p4_c3"
+    ]
+  },
+  {
+    "question_id":"Q005",
+    "query":"What optimizer and learning rate schedule were used to train the Transformer?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"The Transformer uses the Adam optimizer with beta1 = 0.9, beta2 = 0.98 and epsilon = 1e-9. The learning rate increases linearly during the first 4000 warmup steps and subsequently decreases proportionally to the inverse square root of the training step number.",
+    "relevant_chunk_ids":[
+      "attention_is_all_you_need_p7_c4",
+      "attention_is_all_you_need_p7_c5"
+    ]
+  },
+  {
+    "question_id":"Q008",
+    "query":"How does BERT select and replace tokens during masked language model training?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"BERT randomly selects 15% of token positions for prediction. Of the selected tokens, 80% are replaced with the MASK token, 10% with a random token, and 10% remain unchanged. The model predicts the original tokens.",
+    "relevant_chunk_ids":[
+      "bert_p4_c4",
+      "bert_p12_c4",
+      "bert_p12_c5",
+      "bert_p13_c3",
+      "bert_p16_c4"
+    ]
+  },
+  {
+    "question_id":"Q010",
+    "query":"How is BERT fine-tuned for extractive question answering?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"BERT represents the question and passage as a single packed sequence. During fine-tuning, trainable start and end vectors are introduced. Dot products between these vectors and token representations, followed by softmax, determine the probabilities of answer-span boundaries.",
+    "relevant_chunk_ids":[
+      "bert_p6_c6"
+    ]
+  },
+  {
+    "question_id":"Q012",
+    "query":"How is the triplet objective defined in Sentence-BERT?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"The triplet objective uses an anchor, a positive sentence and a negative sentence. It minimizes max(d(a,p) - d(a,n) + margin, 0), encouraging the positive embedding to be closer to the anchor than the negative embedding. SBERT uses Euclidean distance and a margin of 1.",
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c4",
+      "sentence_bert_p3_c5"
+    ]
+  },
+  {
+    "question_id":"Q013",
+    "query":"How does Sentence-BERT use natural language inference data during training?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"Sentence-BERT is trained using the combined SNLI and MultiNLI datasets, containing 570000 and 430000 sentence pairs respectively. It is fine-tuned for one epoch using a three-way softmax classification objective, batch size 16, Adam with learning rate 2e-5 and linear warmup over 10% of the training data.",
+    "relevant_chunk_ids":[
+      "sentence_bert_p3_c5",
+      "sentence_bert_p4_c3",
+      "sentence_bert_p4_c4"
+    ]
+  },
+  {
+    "question_id":"Q016",
+    "query":"What is the difference between RAG-Sequence and RAG-Token?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"RAG-Sequence uses the same latent retrieved document for the entire generated sequence, whereas RAG-Token allows different latent documents to contribute to individual output tokens.",
+    "relevant_chunk_ids":[
+      "rag_p2_c4",
+      "rag_p3_c1",
+      "rag_p3_c2",
+      "rag_p3_c3"
+    ]
+  },
+  {
+    "question_id":"Q018",
+    "query":"How is the non-parametric memory constructed in the RAG framework?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"RAG constructs its non-parametric memory using the December 2018 Wikipedia dump. Articles are divided into disjoint 100-word chunks, producing approximately 21 million passages. A DPR document encoder generates dense embeddings, which are indexed using FAISS with an HNSW approximation for maximum inner product search.",
+    "relevant_chunk_ids":[
+      "rag_p4_c4"
+    ]
+  },
+  {
+    "question_id":"Q021",
+    "query":"How is similarity calculated between question and passage embeddings in DPR?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"DPR calculates similarity using the dot product between the question embedding produced by the question encoder and the passage embedding produced by the passage encoder.",
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p3_c1"
+    ]
+  },
+  {
+    "question_id":"Q025",
+    "query":"What objective function is used to train the DPR dual encoder?",
+    "expected_answerable":true,
+    "category":"answerable",
+    "reference_answer":"DPR trains the dual encoder by minimizing the negative log-likelihood of the positive passage. The probability is computed using a softmax over the similarity scores of the positive and negative passages.",
+    "relevant_chunk_ids":[
+      "dense_passage_retrieval_p3_c4",
+      "dense_passage_retrieval_p3_c5",
+      "dense_passage_retrieval_p12_c1"
+    ]
+  },
+  {
+    "question_id":"Q026",
+    "query":"What causes volcanic eruptions?",
+    "expected_answerable":false,
+    "category":"unrelated_negative",
+    "reference_answer":null,
+    "relevant_chunk_ids":null
+  },
+  {
+    "question_id":"Q028",
+    "query":"What is the orbital period of Neptune?",
+    "expected_answerable":false,
+    "category":"unrelated_negative",
+    "reference_answer":null,
+    "relevant_chunk_ids":null
+  },
+  {
+    "question_id":"Q031",
+    "query":"What was the exact training cost of GPT-3 in US dollars?",
+    "expected_answerable":false,
+    "category":"domain_related_negative",
+    "reference_answer":null,
+    "relevant_chunk_ids":null
+  },
+  {
+    "question_id":"Q033",
+    "query":"What is the exact number of experts in the Mixtral 8x7B architecture?",
+    "expected_answerable":false,
+    "category":"domain_related_negative",
+    "reference_answer":null,
+    "relevant_chunk_ids":null
+  },
+  {
+    "question_id":"Q035",
+    "query":"How many image-text pairs were used to train CLIP?",
+    "expected_answerable":false,
+    "category":"domain_related_negative",
+    "reference_answer":null,
+    "relevant_chunk_ids":null
+  }
+]

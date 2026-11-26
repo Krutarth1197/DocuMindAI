@@ -1,0 +1,11 @@
+{
+    "verification_date": "2026-11-26T09:39:11.139007+00:00",
+    "verification_method": "pip install --dry-run --ignore-installed",
+    "exit_code": 0,
+    "dependency_resolution": "passed",
+    "specified_dependencies": 16,
+    "dependency_conflicts_detected": false,
+    "pytorch_cpu_resolution": "passed",
+    "fresh_install_tested": false,
+    "index_reconstruction_tested": false
+}

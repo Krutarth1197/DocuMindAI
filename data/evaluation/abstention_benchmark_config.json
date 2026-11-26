@@ -1,0 +1,13 @@
+{
+    "benchmark_version": 1,
+    "corpus_version": 2,
+    "total_questions": 35,
+    "answerable_questions": 25,
+    "unanswerable_questions": 10,
+    "relevance_threshold": 0.0,
+    "threshold_source": "Previous 15-question development set",
+    "benchmark_sha256": "995c0d0ccc7126c75dfb47cc58aecc27f58f577516fa03fbef43b4ad9cf466dc",
+    "corpus_sha256": "0d11169d9aa5943cc11bf8351aed6516bbd9d7f27a40e13e9bccab23949cba7f",
+    "negative_label_method": "Manually constructed presumed out-of-corpus questions",
+    "status": "frozen"
+}

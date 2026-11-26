@@ -1,0 +1,212 @@
+[
+  {
+    "question_id":"Q001",
+    "query":"Why does scaled dot-product attention divide the dot products by the square root of the key dimension?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q002",
+    "query":"How are sinusoidal positional encodings constructed?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q003",
+    "query":"What prevents the Transformer decoder from attending to subsequent positions?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q004",
+    "query":"What is the structure of the position-wise feed-forward network?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q005",
+    "query":"What optimizer and learning rate schedule were used to train the Transformer?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q006",
+    "query":"How does BERT construct its input token representations?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q007",
+    "query":"What is the purpose of next sentence prediction during BERT pre-training?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q008",
+    "query":"How does BERT select and replace tokens during masked language model training?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q009",
+    "query":"How many layers and attention heads are used in BERT Base and BERT Large?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q010",
+    "query":"How is BERT fine-tuned for extractive question answering?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q011",
+    "query":"Which pooling strategies are evaluated in Sentence-BERT?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q012",
+    "query":"How is the triplet objective defined in Sentence-BERT?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q013",
+    "query":"How does Sentence-BERT use natural language inference data during training?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q014",
+    "query":"Which pooling strategy is used as the default configuration in Sentence-BERT?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q015",
+    "query":"What features are concatenated for the Sentence-BERT classification objective?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q016",
+    "query":"What is the difference between RAG-Sequence and RAG-Token?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q017",
+    "query":"Which pre-trained model is used as the parametric generator in RAG?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q018",
+    "query":"How is the non-parametric memory constructed in the RAG framework?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q019",
+    "query":"Why is the document encoder kept fixed during RAG fine-tuning?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q020",
+    "query":"How does RAG marginalize over retrieved documents during generation?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q021",
+    "query":"How is similarity calculated between question and passage embeddings in DPR?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q022",
+    "query":"What types of negative passages are considered during DPR training?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q023",
+    "query":"How are in-batch negatives used to train the dense retriever?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q024",
+    "query":"How is Wikipedia divided into passages for dense passage retrieval?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q025",
+    "query":"What objective function is used to train the DPR dual encoder?",
+    "expected_answerable":true,
+    "category":"answerable"
+  },
+  {
+    "question_id":"Q026",
+    "query":"What causes volcanic eruptions?",
+    "expected_answerable":false,
+    "category":"unrelated_negative"
+  },
+  {
+    "question_id":"Q027",
+    "query":"How does the human kidney filter blood?",
+    "expected_answerable":false,
+    "category":"unrelated_negative"
+  },
+  {
+    "question_id":"Q028",
+    "query":"What is the orbital period of Neptune?",
+    "expected_answerable":false,
+    "category":"unrelated_negative"
+  },
+  {
+    "question_id":"Q029",
+    "query":"How is sourdough bread fermented?",
+    "expected_answerable":false,
+    "category":"unrelated_negative"
+  },
+  {
+    "question_id":"Q030",
+    "query":"What are the major causes of ocean tides?",
+    "expected_answerable":false,
+    "category":"unrelated_negative"
+  },
+  {
+    "question_id":"Q031",
+    "query":"What was the exact training cost of GPT-3 in US dollars?",
+    "expected_answerable":false,
+    "category":"domain_related_negative"
+  },
+  {
+    "question_id":"Q032",
+    "query":"What is the maximum context window of Claude 3 Opus?",
+    "expected_answerable":false,
+    "category":"domain_related_negative"
+  },
+  {
+    "question_id":"Q033",
+    "query":"What is the exact number of experts in the Mixtral 8x7B architecture?",
+    "expected_answerable":false,
+    "category":"domain_related_negative"
+  },
+  {
+    "question_id":"Q034",
+    "query":"What MMLU score was achieved by Llama 3.1 405B?",
+    "expected_answerable":false,
+    "category":"domain_related_negative"
+  },
+  {
+    "question_id":"Q035",
+    "query":"How many image-text pairs were used to train CLIP?",
+    "expected_answerable":false,
+    "category":"domain_related_negative"
+  }
+]
