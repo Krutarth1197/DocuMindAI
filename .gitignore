@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Research papers and generated corpus
+data/raw/
+data/processed/
+
+# Vector indexes
+vector_store/
+
+# Model weights and caches
+models/
+.cache/
+*.safetensors
+*.pt
+*.pth
+*.pkl
+
+# Local experiments
+backups/
+*.tmp
+*.log
+
+# Gradio temporary files
+.gradio/
+
+# Publication exclusions
+*.pyc
